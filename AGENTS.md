@@ -41,6 +41,10 @@ _TODO: fill in repository layout._
 <pm> run test         # tests
 ```
 
+## Reuse First
+
+Prefer what's already installed over hand-rolled code: check `package.json` for a dependency that covers the need before writing your own, and grep the repo for an existing util/helper/component before creating a new one. Prefer built-in APIs (native `fetch`, framework server actions, middleware) over adding a dependency for the same job. Add a new dependency only when nothing fits, and state why in the PR.
+
 ## Code Style
 
 - Use the project's pinned runtime and package manager (e.g. Node 22 + pnpm 10, or Node 22 + npm).
